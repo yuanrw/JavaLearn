@@ -1,0 +1,21 @@
+.DS_Store
+/target
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+*.iml
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders
