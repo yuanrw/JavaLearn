@@ -1,4 +1,4 @@
-package com.yrw.io.netty.Chapter4;
+package com.yrw.io.netty.chapter4;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.ByteBuf;

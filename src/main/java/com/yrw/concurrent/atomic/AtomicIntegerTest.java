@@ -17,12 +17,12 @@ public class AtomicIntegerTest {
     System.out.println(value.compareAndSet(10, 3));
     System.out.println(value.get());
     value.set(0);
-    //
+
     System.out.println(value.incrementAndGet());
     System.out.println(value.getAndAdd(2));
     System.out.println(value.getAndSet(5));
     System.out.println(value.get());
-    //
+
     final int threadSize = 10;
     Thread[] ts = new Thread[threadSize];
     for (int i = 0; i < threadSize; i++) {
@@ -32,14 +32,14 @@ public class AtomicIntegerTest {
         }
       };
     }
-    //
+
     for (Thread t : ts) {
       t.start();
     }
     for (Thread t : ts) {
       t.join();
     }
-    //
+
     System.out.println(value.get());
   }
 }
